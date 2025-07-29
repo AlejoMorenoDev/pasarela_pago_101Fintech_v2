@@ -1,0 +1,48 @@
+
+
+.boton-arriba {
+    padding:50px;
+    align-items: flex-start;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    z-index: 3;
+    border-radius:50%;
+    border: none;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#scrollBtn svg{
+    width: 40px;
+    height: 40px;
+}
+
+
+#scrollBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    outline: none;
+    background-color: #048C4B;
+    cursor: pointer;
+    color: #f3f3f3;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#scrollBtn:hover{
+
+    background-color: rgb(9, 80, 9);
+
+}
+

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web_pasarela</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/style_check_box.css">
+
+</head>
+
+<body>
+    <header class="container-header">
+
+
+        <div class="header-info">
+            <div>
+                <a href="/"><img style="width: 260px;" src="/assets/svg/lgo_101_software.svg" alt=""></a>
+            </div>
+            <div class="box-header-info">
+
+                <div>
+                    <p><strong>PASARELA</strong> <br>DE PAGOS</p>
+                </div>
+
+                <div class="header-buttom">
+                    <button>
+                        <img src="/assets/svg/ico_crea_cuenta.png" alt="">
+                        <p>Crea tu cuenta</p>
+                    </button>
+                    <button>
+                        <img src="/assets/svg/ico_perfil.png" alt="">
+                        <p>Inicia sesión</p>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <nav class="container-nav">
+            <label for="show-menu" class="show-menu"><span>Menu</span>
+                <div class="lines"></div>
+            </label>
+            <input type="checkbox" id="show-menu">
+            <ul id="menu">
+                <li>
+                    <a href="#">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="#">Soluciones</a>
+                </li>
+                <li>
+                    <a href="#">Planes y tarifas</a>
+                </li>
+                <li>
+                    <a href="#">Contáctanos</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="container-general">
+
+        <section class="container-contactos">
+            <h1>
+                <strong> Contáctanos</strong> <br>
+                Envianos una solicitud
+            </h1>
+            <section class="box-contactos">
+
+                <article class="contactos-info">
+
+
+
+                    <p>Con nuestra pasarela de pagos 101 Software obtienes una variedad de soluciones que se ajustan a
+                        tus necesidades</p>
+
+
+                    <img src="/assets/img/portrait-woman-customer-service-worker_sm.jpg" alt="">
+                </article>
+
+                <form method="post" action="/" class="container-form">
+                    <div class="form-info">
+                        <label>Nombres<span class="form-asterico">*</span>
+                            <input type="text" name="name" placeholder="" required>
+                        </label>
+                    </div>
+
+                    <div class="form-info">
+                        <label>Correo electrónico<span class="form-asterico">*</span>
+                            <input type="text" name="name" placeholder="" required>
+                        </label>
+                    </div>
+
+                    <div class="form-info">
+                        <label>Nombre Empresa<span class="form-asterico">*</span>
+                            <input type="text" name="name" placeholder="" required>
+                        </label>
+                    </div>
+
+                    <div class="form-info">
+                        <label>Asunto<span class="form-asterico">*</span>
+                            <input type="text" name="name" placeholder="" required>
+                        </label>
+                    </div>
+
+                    <div class="form-info">
+                        <label>Mensaje<span class="form-asterico">*</span>
+                        </label>
+                        <textarea class="form-texarea" name="request[description]" id="request_description"
+                            aria-required="true" aria-describedby="request_description_hint"
+                            aria-labelledby="request_description_label">
+                        </textarea>
+                    </div>
+
+                    <!-- <div >
+                        <label for="file-upload">Adjuntar archivo:</label>
+                        <div class="form-adjuntar">
+                            <input type="file" id="file-upload" name="file-upload"><span>Clic aquí</span>
+                        </div>
+                    </div> -->
+
+                    <div >
+                        <label for="fileInput">Adjuntar archivo</label>
+                        <div class="form-adjuntar">
+                            <input type="file" id="fileInput"  name="file-upload" onchange="displayFileName()"><label>Agregue aquí</label>
+                        </div>
+                        <div id="fileName" class="file-name"></div>
+                    </div>
+
+
+                    <div class="txt-legales-container">
+
+                        <hr class="hr">
+
+                        <p>
+                            <span class="form-asterico">*</span>Campos obligatorios
+                        </p>
+
+                        <hr>
+
+                        <div class="checkbox-wrapper-24 .checkbox">
+
+                            <input type="checkbox" value="" id="check-24" name="check">
+                            <label for="check-24">
+                                <span><!-- This span is needed to create the "checkbox" element --></span>
+                                <font>
+                                    <font>De manera expresa y libre manifiesto que he leído y aceptado la
+                                        <strong>Política de Tratamiento de Datos.</strong> De igual modo, manifiesto
+                                        autorizar la recolección y el tratamiento de mis datos personales por parte de
+                                        101 S.A.S., conociendo los derechos y obligaciones contenidos en la Política de
+                                        Tratamiento de Datos.
+                                    </font>
+                                </font>
+                            </label>
+                        </div>
+
+                        <hr>
+                    </div>
+
+
+
+                    </div>
+                </form>
+
+
+            </section>
+            <button>
+                Enviar
+            </button>
+
+
+        </section>
+
+        <section class="container-contactos-general">
+
+            <section class="container-contactenos">
+                <h1>
+                    <strong>Contáctanos</strong>
+                </h1>
+
+                <article class="contactenos-item">
+                    <img src="/assets/svg/dudas.svg" alt="">
+                    <h5>Tus Dudas </h5>
+                    <p>Escríbenos para <br>ayudarte</p>
+                </article>
+
+                <article class="contactenos-item">
+                    <img src="/assets/svg/chatea.svg" alt="">
+                    <h5>Chatea </h5>
+                    <p>Escríbenos para <br>ayudarte</p>
+                </article>
+
+                <article class="contactenos-item">
+                    <img src="/assets/svg/comunicate.svg" alt="">
+                    <h5>Comunícate </h5>
+                    <p>Habla con un asesor <br>de lunes a viernes de <br> 7:30 a.m. a 5:30 p.m.</p>
+                </article>
+
+                <article class="contactenos-item">
+                    <img src="/assets/svg/escribenos.svg" alt="">
+                    <h5>Escríbenos </h5>
+                    <p>Contáctanos a través de <br> nuestro correo electrónico
+
+                        <br>soporte@101software.com
+                    </p>
+                </article>
+            </section>
+        </section>
+
+        <footer class="container-footer">
+            <div class="txt_back_footer">
+                <img src="/assets/svg/txt_101_software_footer.svg" alt="">
+            </div>
+            <div class="box-footer-general">
+                <div class="box-footer-info">
+                    <div>
+                        <p>
+                            Escríbenos:
+                            <br> soporte@1cero1.com
+                            <br> Linea de atención al cliente
+                            <br> Lunes a domingo y festivos de 8:00 a.m. a 8:00 p.m.
+                            <br> Nacional: 01 8000 129 999
+                        </p>
+                    </div>
+                    <div class="dir-web">
+                        <a href="">
+                            <p>www.<span id="nameweb"><strong>1cero1</strong></span>.com</p>
+                        </a>
+
+                    </div>
+                    <div id="desarrollo">
+                        <p>Desarrollado por:</p>
+                        <img src="/assets/svg/lgo_software_white.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="box-footer-logos">
+                    <img src="/assets/svg/lgo_software_white.svg" alt="">
+                    <div class="box-iconos-redes">
+                        <a href=""> <img src="/assets/svg/facebook.svg" alt=""></a>
+                        <a href=""> <img src="/assets/svg/instagram.svg" alt=""></a>
+                        <a href=""> <img src="/assets/svg/equis.svg" alt=""></a>
+                        <a href=""> <img style="width: 30px;" src="/assets/svg/youtube.svg" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </footer>
+
+    </main>
+
+</body>
+
+<script>
+    function displayFileName() {
+    var fileInput = document.getElementById('fileInput');
+    var fileNameDisplay = document.getElementById('fileName');
+    if (fileInput.files.length > 0) {
+      fileNameDisplay.textContent = 'Archivo seleccionado: ' + fileInput.files[0].name;
+    } else {
+      fileNameDisplay.textContent = '';
+    }
+  }
+  </script>
+
+</html>
