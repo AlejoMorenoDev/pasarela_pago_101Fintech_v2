@@ -219,6 +219,11 @@ body {
   margin: 0px;
 }
 
+.box-bienvenida span{
+  font-weight: 700;
+}
+
+
 .box-bienvenida-textos {
   display: flex;
   flex-direction: column;
@@ -409,7 +414,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   margin: 0 auto;
-  gap: 90px;
+  gap: 120px;
   font-size: 2.5rem;
   font-weight: 500;
   color: var(--blue);
@@ -481,11 +486,11 @@ margin-top: 40px;
   background-position-y: bottom;
   background-size: cover;
   position: relative;
-  border-radius: 12px;
+  border-radius: 30px;
   padding-top: 0.1px;
   display: flex;
   align-items: center;
-  margin: 90px 0 0 0;
+  margin: 150px 0 0 0;
 
   animation-name:reveal_box_aboutUS;
   animation-timeline: view();
@@ -505,11 +510,6 @@ margin-top: 40px;
 }
 
 
-
-
-
-
-
 .box-about-us {
   /* width: 90%; */
   margin: 150px auto 0px auto;
@@ -527,9 +527,9 @@ margin-top: 40px;
   font-weight: 700;
   margin: 0px;
   color: var(--blue);
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
-  padding: 70px 0 0 0;
+  padding: 100px 0 0 0;
 }
 
 .resaltar__who {
@@ -538,7 +538,7 @@ margin-top: 40px;
   line-height: 3.7rem;
   width: 50%;
   padding: 0 0 0 60px;
-  margin: 60px 0 20px 0;
+  margin: 80px 0 40px 0;
 
 
 
@@ -583,8 +583,9 @@ margin-top: 40px;
 .texts-about h4 {
   font-size: 4rem;
   color: var(--dark_gray);
-  line-height: 4.5rem;
+  line-height: 5rem;
   padding: 0 0 40px 0;
+  text-wrap: balance;
 
   animation: texts-about linear both;
   animation-timeline: view();
@@ -657,25 +658,33 @@ margin-top: 40px;
 
 
 
-#title_solution{
-  margin: 100px 0 0 0;
+.title_solution h1{
+  margin: 130px 0 0 0;
   font-weight: 700;
-  margin-bottom: 40px;
+  
   color: var(--blue);
-  font-size: 4rem;
+  font-size: 4.5rem;
   text-align: center;
 }
 
+.title_solution p{
+  font-size: 2rem;
+  color: var(--dark_gray);
+  text-align: center;
+  text-wrap: balance;
+}
+
+
 .resaltar__solucion {
   font-size: 4rem;
-  margin: 0px;
+  margin: 0px auto;
   font-weight: 500;
-  line-height: 5.5rem;
+  
   background-color: var(--blue);
   font-weight: 500;
-  border-radius: 5px;
+  border-radius: 12px;
   color: var(--white);
-  padding: 50px 30px 50px 30px;
+  padding: 20px 50px 20px 50px;
   text-align: center;
   /* margin-bottom: 70px; */
 
@@ -948,6 +957,8 @@ margin-top: 40px;
   color: var(--white);
   text-decoration: none;
   font-size: var(--lg);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 .btn-soluciones:hover{
@@ -996,15 +1007,30 @@ margin-top: 40px;
 
 .box-fee {
   background-image: url(/assets/img/banner_01_tarifas.jpg);
-  background-position: center;
-  background-size: cover;
+  background-position: center; 
+  /* background-size: cover; */
   position: relative;
-  min-height: 54rem;
+  min-height: 60rem;
   padding-top: .1px;
   display: flex;
   align-items: center;
-  border-radius: 15px 15px 0 0;
+  border-radius: 30px 30px 0 0;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
 
+.box-fee::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* cambia el 0.5 por más o menos oscuridad */
+    z-index: 1;
+}
+
+.fee-text {
+    position: relative;
+    z-index: 2; /* para estar encima del overlay */
 }
 
 
@@ -1014,6 +1040,11 @@ margin-top: 40px;
   margin-left: 80px;
   display: flex;
   flex-direction: column;
+  text-wrap: balance;
+}
+
+.box_fee__copy{
+  width: 60%;
 }
 
 .fee__copy{
@@ -1022,7 +1053,7 @@ margin-top: 40px;
 }
 
 .fee__title{
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   margin: 20px 0 0 0 ;
 }
@@ -1039,14 +1070,24 @@ margin-top: 40px;
 .container__plans{
   background-color: #f6f6f6;
   padding-bottom: 60px;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 40px 40px;
 }
 
 .box-plans{
-  margin: 120px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
+}
+
+.plans-card{
+  margin: 100px 0px 0px 0px;
 }
 
 /*------------------------*/
+
+.box_recuado_psd{
+  position: relative;
+  padding-top: 82px;
+  overflow: hidden;
+}
 
 .title-plan-pse{
   /* text-align: center;
@@ -1058,7 +1099,7 @@ margin-top: 40px;
   margin: 0 auto;
   padding: 25px 0px;
   border-radius: 8px;
-  position: relative;
+  /* position: relative; */
 }
 
 .box-img-pse{
@@ -1072,12 +1113,12 @@ margin-top: 40px;
 .title-plan-pse img{
   position: absolute;
   width: 330px;
-  bottom: 0;
-  left: 5%;
+  bottom: -49px;
+  left: 14%;
 }
 
 .title-plan-pse h1{
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: var(--white);
   font-weight: 700;
 }
@@ -1093,7 +1134,7 @@ margin-top: 40px;
   width: 50%;
   border:  1px solid #000;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   /* background-color: #7C7C7B; */
 }
 
@@ -1212,38 +1253,28 @@ margin-top: 40px;
 }
 
 .title-plan-card  h1{
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: var(--blue);
   font-weight: 700;
   padding: 0 0 0 30px;
+  mix-blend-mode: multiply;
 }
 
 .title-plan-card p{
-  width: 80%;
+  
   line-height: 2.8rem;
   color: var(--blue);
   mix-blend-mode: multiply;
   font-size: var(--lg);
   padding: 0 0 0 30px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .plans-cardcopy-card h1{
-  color: var(--blue);
+  color: var(--light-blue);
   font-size: 3.5rem;
   line-height: 3rem;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1260,12 +1291,12 @@ margin-top: 40px;
 
 .plans-cardcopy-card {
   color: var(--dark_gray);
-  font-size: var(--md);
-  line-height: 3rem;
+  /* font-size: var(--md);
+  line-height: 3rem; */
   width: 50%;
   border:  1px solid #000;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   /* background-color: #7C7C7B; */
 }
 
@@ -1279,34 +1310,56 @@ margin-top: 40px;
 
 .texts-card-plans .resaltar{
   /* background-color: rgba(203, 195, 197, 0.38); */
-  color: var(--light-blue);
+  color: var(--blue);
   font-size: var(--mlg);
-  line-height: 3.8rem;
+  line-height: 3.5rem;
 }
 
 .texts-note{
   color: var(--dark_gray);
   font-size: var(--xmd);
-  line-height: 2.5rem;
+  line-height: 2.3rem;
   background-color: #e2e2e2;
-  border-radius: 4px;
-  padding: 10px;
+  border-radius: 12px;
+  padding: 20px;
 
 }
 
 .btn-plan{
-  background-color: #14387F;
-  border: none;
-  padding: 20px 60px;
-  border-radius: 50px;
-  margin: 30px 0px;
+  position: relative;
+  display: inline-block;
+  margin: 15px 0 30px 0;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--blue);
+  background: transparent;
   cursor: pointer;
-  transition: 300ms;
-  transition-timing-function: ease-in;
-
+  transition: ease-out 0.5s;
+  border: 2px solid var(--blue);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 var(--blue);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
-.btn-plan:hover{
+
+.btn-plan:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 var(--blue);
+}
+
+.btn-plan:active {
+  transform: scale(0.9);
+}
+
+.btn-plan a{
+  text-decoration: none;
+}
+
+/* .btn-plan:hover{
   scale: 1.05;
   background: var(--light-blue);
   box-shadow: 0 0 10px var(--dark_gray);
@@ -1319,7 +1372,9 @@ margin-top: 40px;
   color: var(--white);
   text-decoration: none;
   font-size: var(--lg);
-}
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+} */
 
 
 
@@ -1328,18 +1383,6 @@ margin-top: 40px;
   flex-direction: column;
   justify-content: space-between;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1355,12 +1398,12 @@ margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 60px 0 50px 0;
+  margin: 120px 0 80px 0;
 }
 
 .box-bienvenida h1{
-  width: 80%;
-  line-height: 5rem;
+  
+  text-wrap: balance;
   margin: 0;
 }
 
