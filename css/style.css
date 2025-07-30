@@ -1647,8 +1647,16 @@ margin-top: 40px;
   font-size: var(--lg);
   font-weight: 700;
   margin: 30px 0px 0px 0px;
-
+  color: var(--blue);
   margin-top: 80px;
+
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contactenos-item h5:hover {
+  color: #007BFF;
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .contactenos-item p {
@@ -1736,9 +1744,9 @@ margin-top: 40px;
 
 .box-footer-info p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 2.4rem;
   color: var(--white);
   margin: 0px;
 }
@@ -1761,7 +1769,7 @@ margin-top: 40px;
 
 .dir-web p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 22px;
   color: var(--white);
@@ -1783,7 +1791,7 @@ margin-top: 40px;
 }
 
 #nameweb {
-  font-size: var(--lg);
+  font-size: 2.5rem;
 
 }
 
